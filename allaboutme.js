@@ -1,2 +1,4 @@
-let Hobbies = ["Reading Books", "solving rubik's cube", "hiking", "traveling","playing archery", "outdoor activities"];
-console.log("My hobbies are", Hobbies[0]+",", Hobbies[1]+",", Hobbies[2]+",", Hobbies[3]+",", Hobbies[4]+", and other", Hobbies[5]);
+let Hobbies = ("Reading Books, solving rubik's cube, hiking, traveling, playing archery, outdoor activities");
+let books = ("the 5 university series of  Gwy Saludes , A Gentle Reminder, The Let Them Theory, The Art of War, and more.");
+console.log("My hobbies are", Hobbies);
+console.log("The book that I already read is", books);
