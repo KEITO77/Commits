@@ -28,7 +28,7 @@ header {
 }
 
 .logo span {
-    color: #55d7e8;
+    color: #e84b55;
     font-size: 11px;
 }
 
@@ -44,7 +44,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #55d7e8;
+    color: #e84b55;
 }
 
 .hero {
@@ -53,13 +53,13 @@ nav a:hover {
     align-items: center;
     padding: 70px 10%;
     background:
-        linear-gradient(90deg, #080e19 15%, #080e19bb 55%, transparent),
-        url('https://placehold.co/1400x700/12344b/ffffff?text=KALEA+HERO+ART')
+        linear-gradient(90deg, #080e19 15%, #080e19dd 50%, transparent),
+        url('https://placehold.co/1400x700/29151d/ffffff?text=BEATRIX+HERO+ART')
         center/cover;
 }
 
 .hero-content p:first-child {
-    color: #55d7e8;
+    color: #e84b55;
     letter-spacing: 4px;
     font-size: 13px;
 }
@@ -67,7 +67,7 @@ nav a:hover {
 .hero h1 {
     font-family: 'Orbitron', sans-serif;
     font-size: clamp(55px, 10vw, 100px);
-    color: #55d7e8;
+    color: #e84b55;
 }
 
 .hero h3 {
@@ -81,12 +81,18 @@ nav a:hover {
 
 .btn {
     display: inline-block;
-    background: #55d7e8;
-    color: #07111e;
+    background: #e84b55;
+    color: white;
     padding: 13px 25px;
     text-decoration: none;
     font-weight: bold;
     border-radius: 4px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #ff6873;
+    transform: translateY(-3px);
 }
 
 .profile, .skills {
@@ -95,7 +101,7 @@ nav a:hover {
 
 h2 {
     font-family: 'Orbitron', sans-serif;
-    color: #55d7e8;
+    color: #e84b55;
     text-align: center;
     margin-bottom: 40px;
 }
@@ -108,11 +114,12 @@ h2 {
     padding: 35px;
     border-radius: 10px;
     line-height: 2;
+    border: 1px solid #382832;
 }
 
 .profile-info h3 {
     font-size: 28px;
-    color: #55d7e8;
+    color: #e84b55;
 }
 
 .profile-info p {
@@ -128,12 +135,19 @@ h2 {
 .skill-card {
     padding: 25px;
     background: #111e30;
-    border: 1px solid #263e58;
+    border: 1px solid #382832;
     border-radius: 8px;
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    border-color: #e84b55;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px #e84b5520;
 }
 
 .skill-card h3 {
-    color: #55d7e8;
+    color: #e84b55;
     margin-bottom: 12px;
 }
 
