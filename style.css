@@ -1,0 +1,174 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #080e19;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background: #101b2c;
+}
+
+.logo {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 20px;
+}
+
+.logo span {
+    color: #55d7e8;
+    font-size: 11px;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+nav a:hover {
+    color: #55d7e8;
+}
+
+.hero {
+    min-height: 550px;
+    display: flex;
+    align-items: center;
+    padding: 70px 10%;
+    background:
+        linear-gradient(90deg, #080e19 15%, #080e19bb 55%, transparent),
+        url('https://placehold.co/1400x700/12344b/ffffff?text=KALEA+HERO+ART')
+        center/cover;
+}
+
+.hero-content p:first-child {
+    color: #55d7e8;
+    letter-spacing: 4px;
+    font-size: 13px;
+}
+
+.hero h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: clamp(55px, 10vw, 100px);
+    color: #55d7e8;
+}
+
+.hero h3 {
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+
+.hero-content > p {
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background: #55d7e8;
+    color: #07111e;
+    padding: 13px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.profile, .skills {
+    padding: 75px 10%;
+}
+
+h2 {
+    font-family: 'Orbitron', sans-serif;
+    color: #55d7e8;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.profile-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    background: #111e30;
+    padding: 35px;
+    border-radius: 10px;
+    line-height: 2;
+}
+
+.profile-info h3 {
+    font-size: 28px;
+    color: #55d7e8;
+}
+
+.profile-info p {
+    color: #c2ccdb;
+}
+
+.skill-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.skill-card {
+    padding: 25px;
+    background: #111e30;
+    border: 1px solid #263e58;
+    border-radius: 8px;
+}
+
+.skill-card h3 {
+    color: #55d7e8;
+    margin-bottom: 12px;
+}
+
+.skill-card p {
+    color: #c2ccdb;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #101b2c;
+    color: #aab5c6;
+    font-size: 11px;
+    line-height: 2;
+}
+
+@media (max-width: 650px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    .hero {
+        min-height: 430px;
+        padding: 50px 7%;
+    }
+
+    .profile-info,
+    .skill-container {
+        grid-template-columns: 1fr;
+    }
+}
