@@ -1,22 +1,42 @@
-let PhoneBrand = ["iPhone", "Oppo", "Samsung"];
-let ModelName = ["13", "AO2", "ZFOLD"];
-let ModelColor = ["Navy Blue","Pink", "Black"];
-console.log("my cellphone is", PhoneBrand[0]+" "+ModelName[0]+" "+"color "+ModelColor[2]);
 
-let Capcity = ["128GB", "256GB", "512GB"];
-console.log("my cellphone capacity is", Capcity[1]);
+// ARRAY: Cellphone Information
+let phoneBrands = ["iPhone", "Oppo", "Samsung"];
+let modelNames = ["13", "A02", "Z Fold"];
+let modelColors = ["Navy Blue", "Pink", "Black"];
+let storageCapacities = ["128GB", "256GB", "512GB"];
 
-//conditional statement
+// DISPLAY: My Personal Cellphone
+console.log("========== MY CELLPHONE ==========");
+
+console.log("Phone Brand:", phoneBrands[0]);
+console.log("Model:", phoneBrands[0] + " " + modelNames[0]);
+console.log("Color:", modelColors[2]);
+console.log("Storage Capacity:", storageCapacities[1]);
+
+// CONDITIONAL STATEMENT
 let price = 1000;
-if(price > 1000){
-    console.log("my cellphone is expensive");
-}else if(price < 1000){
-    console.log("my cellphone is cheap");
-}else{
-    console.log("my cellphone is neither expensive nor cheap");
+
+console.log("\n========== CELLPHONE PRICE ==========");
+console.log("Phone Price: ₱" + price);
+
+if (price > 1000) {
+    console.log("My cellphone is expensive.");
+} else if (price < 1000) {
+    console.log("My cellphone is affordable.");
+} else {
+    console.log("My cellphone has an average price.");
 }
 
-//looping statement
-for(let i = 0; i < PhoneBrand.length; i++){
-    console.log("my cellphone brand is", PhoneBrand[i]);
-}       
+// LOOPING STATEMENT
+console.log("\n========== AVAILABLE PHONE BRANDS ==========");
+
+for (let i = 0; i < phoneBrands.length; i++) {
+    console.log((i + 1) + ". " + phoneBrands[i]);
+}
+
+// ADDITIONAL: DISPLAY ALL PHONE MODELS
+console.log("\n========== PHONE MODELS ==========");
+
+for (let i = 0; i < phoneBrands.length; i++) {
+    console.log(phoneBrands[i] + " - " + modelNames[i]);
+}
