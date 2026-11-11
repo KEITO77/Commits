@@ -1,7 +1,7 @@
 
 // ARRAY: Cellphone Information
-let phoneBrands = ["iPhone", "Oppo", "Samsung"];
-let modelNames = ["13", "A02", "Z Fold"];
+let phoneBrands = ["iPhone", "Oppo", "Samsung", "Nokia"];
+let modelNames = ["13", "A02", "Z Fold", "as1"];
 let modelColors = ["Navy Blue", "Pink", "Black"];
 let storageCapacities = ["128GB", "256GB", "512GB"];
 
